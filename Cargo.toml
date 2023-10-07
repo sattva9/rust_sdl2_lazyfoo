@@ -1,0 +1,82 @@
+[package]
+name = "rust_sdl2_tutorial"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[[bin]]
+path = "src/1_open_window.rs"
+name = "open_window"
+
+[[bin]]
+path = "src/2_surfaces.rs"
+name = "surfaces"
+
+[[bin]]
+path = "src/3_texture.rs"
+name = "texture"
+
+[[bin]]
+path = "src/4_key_presses.rs"
+name = "key_presses"
+
+[[bin]]
+path = "src/5_geometry_rendering.rs"
+name = "geometry_rendering"
+
+[[bin]]
+path = "src/6_viewport.rs"
+name = "viewport"
+
+[[bin]]
+path = "src/7_color_keying.rs"
+name = "color_keying"
+
+[[bin]]
+path = "src/8_srpite_sheet.rs"
+name = "srpite_sheet"
+
+[[bin]]
+path = "src/9_color_modulation.rs"
+name = "color_modulation"
+
+[[bin]]
+path = "src/10_alpha_blending.rs"
+name = "alpha_blending"
+
+[[bin]]
+path = "src/11_animated_sprites.rs"
+name = "animated_sprites"
+
+[[bin]]
+path = "src/12_rotation_and_flipping.rs"
+name = "rotation_and_flipping"
+
+[[bin]]
+path = "src/13_ttf_fonts.rs"
+name = "ttf_fonts"
+
+[[bin]]
+path = "src/14_mouse_events.rs"
+name = "mouse_events"
+
+[[bin]]
+path = "src/15_key_states.rs"
+name = "key_states"
+
+[[bin]]
+path = "src/16_sound_effects.rs"
+name = "sound_effects"
+
+[[bin]]
+path = "src/17_timer.rs"
+name = "timer"
+
+[[bin]]
+path = "src/18_advanced_timer.rs"
+name = "advanced_timer"
+
+
+[dependencies]
+sdl2 = { version = "0.35.2", features = ["image", "ttf", "mixer"] }
