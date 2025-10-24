@@ -34,19 +34,19 @@ fn main() -> Result<(), String> {
         &texture_creator,
         &font,
         "Press S to start or stop the timer",
-        Color::RGB(255, 225, 0),
+        Color::RGB(0, 0, 255),
     )?;
     let pause_prompt_texture = LTexture::load_from_rendered_text(
         &texture_creator,
         &font,
         "Press P to pause or unpause the timer",
-        Color::RGB(255, 255, 0),
+        Color::RGB(0, 0, 255),
     )?;
     let time_text_prompt_texture = LTexture::load_from_rendered_text(
         &texture_creator,
         &font,
         "Seconds since start time:",
-        Color::RGB(255, 255, 255),
+        Color::RGB(0, 0, 0),
     )?;
 
     let mut l_timer = LTimer::new(sdl_context.timer()?);
@@ -88,10 +88,10 @@ fn main() -> Result<(), String> {
             &texture_creator,
             &font,
             &format!("{}", l_timer.get_ticks() / 1000),
-            Color::RGB(255, 255, 255),
+            Color::RGB(0, 0, 0),
         )?;
 
-        canvas.set_draw_color(Color::RGB(0, 0, 0));
+        canvas.set_draw_color(Color::RGB(255, 255, 255));
         canvas.clear();
         start_prompt_texture.render(
             &mut canvas,

@@ -6,39 +6,39 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [[bin]]
-path = "src/1_open_window.rs"
+path = "src/01_open_window.rs"
 name = "open_window"
 
 [[bin]]
-path = "src/2_surfaces.rs"
+path = "src/02_surfaces.rs"
 name = "surfaces"
 
 [[bin]]
-path = "src/3_texture.rs"
+path = "src/03_texture.rs"
 name = "texture"
 
 [[bin]]
-path = "src/4_key_presses.rs"
+path = "src/04_key_presses.rs"
 name = "key_presses"
 
 [[bin]]
-path = "src/5_geometry_rendering.rs"
+path = "src/05_geometry_rendering.rs"
 name = "geometry_rendering"
 
 [[bin]]
-path = "src/6_viewport.rs"
+path = "src/06_viewport.rs"
 name = "viewport"
 
 [[bin]]
-path = "src/7_color_keying.rs"
+path = "src/07_color_keying.rs"
 name = "color_keying"
 
 [[bin]]
-path = "src/8_srpite_sheet.rs"
-name = "srpite_sheet"
+path = "src/08_sprite_sheet.rs"
+name = "sprite_sheet"
 
 [[bin]]
-path = "src/9_color_modulation.rs"
+path = "src/09_color_modulation.rs"
 name = "color_modulation"
 
 [[bin]]
@@ -77,6 +77,41 @@ name = "timer"
 path = "src/18_advanced_timer.rs"
 name = "advanced_timer"
 
+[[bin]]
+path = "src/19_calculating_frame_rate.rs"
+name = "calculating_frame_rate"
+
+[[bin]]
+path = "src/20_capping_frame_rate.rs"
+name = "capping_frame_rate"
+
+[[bin]]
+path = "src/21_motion.rs"
+name = "motion"
+
+[[bin]]
+path = "src/22_box_collision_detection.rs"
+name = "box_collision_detection"
+
+[[bin]]
+path = "src/23_per_pixel_collision_detection.rs"
+name = "per_pixel_collision_detection"
+
+[[bin]]
+path = "src/24_circular_collision_detection.rs"
+name = "circular_collision_detection"
+
+[[bin]]
+path = "src/25_scrolling.rs"
+name = "scrolling"
+
+[[bin]]
+path = "src/26_scrolling_backgrounds.rs"
+name = "scrolling_backgrounds"
+
+[[bin]]
+path = "src/27_text_input_and_clipboard.rs"
+name = "text_input_and_clipboard"
 
 [dependencies]
-sdl2 = { version = "0.35.2", features = ["image", "ttf", "mixer"] }
+sdl2 = { version = "0.37.0", features = ["image", "ttf", "mixer"] }
